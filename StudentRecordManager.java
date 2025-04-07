@@ -56,6 +56,7 @@ public class StudentRecordManager {
                 case 4:
                     System.out.println("Enter roll number to delete: ");
                     String deleteRoll = sc.nextLine();
+                    // Use of lambda expression.
                     boolean deleted = list.removeIf(s -> s.roll_number().equals(deleteRoll));
                     if (deleted) {
                         System.out.println("Student deleted successfully.");
